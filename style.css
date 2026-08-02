@@ -1,3 +1,7 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
 img.resize {
 	width: 400px;
 	height: auto;
@@ -6,11 +10,11 @@ img.resize {
 	margin-right: auto;
 }
 
-h2 {
+h1 {
 	text-align: center;
 }
 
-h2, h3, p{
+h1, h2, p{
 	font-family: 'Palatino';
 	line-height: 1.6;
 }
@@ -36,10 +40,13 @@ figcaption {
 
 body {
 	background-color: rgb(242, 242, 242);
+	margin: 0;
+	padding: 24px 0;
 }
 
-div {
-	width: 40%;
+header, main {
+	width: 90%;
+	max-width: 640px;
 	margin: 0 auto;
 	text-align: left;
 }
@@ -84,7 +91,27 @@ a:hover {
 }
 
 .row {
-	width: 70%;
+	width: 100%;
 	display: flex;
 	align-items: baseline;
+}
+
+@media (max-width: 600px) {
+	header, main {
+		width: 92%;
+	}
+
+	.subheading {
+		word-spacing: 15px;
+	}
+
+	.row {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.left, .center, .right {
+		flex: 100%;
+		padding: 6px 10px;
+	}
 }
