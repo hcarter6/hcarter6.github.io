@@ -51,6 +51,10 @@ header, main {
 	text-align: left;
 }
 
+main.resume-main {
+	max-width: 900px;
+}
+
 p {
 	font-size: large;
 }
@@ -76,17 +80,20 @@ a:hover {
 
 .left {
 	flex: 15%;
+	min-width: 0;
 	padding: 10px;
 }
 
 .center {
 	flex: 60%;
+	min-width: 0;
 	padding: 10px;
 	padding-right: 15px;
 }
 
 .right {
 	flex: 25%;
+	min-width: 0;
 	padding: 10px;
 }
 
