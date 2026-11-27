@@ -14,20 +14,19 @@ h1 {
 	text-align: center;
 }
 
-h1, h2, p {
-	font-family: 'Palatino';
+h1, p {
+	font-family: equity_a;
+	line-height: 1.6;
+}
+
+h2 {
+	font-family: equity_a_caps;
 	line-height: 1.6;
 }
 
 figure {
   	display: block;
 		margin: 0 auto;
-		/*
-  	margin-top: 1em;
-  	margin-bottom: 1em;
-  	margin-left: 40px;
-  	margin-right: 40px;
-		*/
 }
 
 figcaption {
@@ -52,7 +51,7 @@ header, main {
 }
 
 main.resume-main {
-	max-width: 900px;
+	max-width: 1000px;
 }
 
 p {
@@ -79,20 +78,20 @@ a:hover {
 }
 
 .left {
-	flex: 15%;
+	flex: 25%;
 	min-width: 0;
 	padding: 10px;
 }
 
 .center {
-	flex: 50%;
+	flex: 55%;
 	min-width: 0;
 	padding: 10px;
 	padding-right: 15px;
 }
 
 .right {
-	flex: 35%;
+	flex: 30%;
 	min-width: 0;
 	padding: 10px;
 }
@@ -136,4 +135,58 @@ a:hover {
 		flex: 100%;
 		padding: 6px 10px;
 	}
+}
+
+@font-face {
+font-family: equity_a;
+font-style: normal;
+font-weight: normal;
+font-stretch: normal;
+font-display: auto;
+src: url('fonts/EquityA/equity_a_regular.woff2') format('woff2');
+}
+
+@font-face {
+font-family: equity_a;
+font-style: italic;
+font-weight: normal;
+font-stretch: normal;
+font-display: auto;
+src: url('fonts/EquityA/equity_a_italic.woff2') format('woff2');
+}
+
+@font-face {
+font-family: equity_a;
+font-style: normal;
+font-weight: bold;
+font-stretch: normal;
+font-display: auto;
+src: url('fonts/EquityA/equity_a_bold.woff2') format('woff2');
+}
+
+@font-face {
+font-family: equity_a;
+font-style: italic;
+font-weight: bold;
+font-stretch: normal;
+font-display: auto;
+src: url('fonts/EquityA/equity_a_bold_italic.woff2') format('woff2');
+}
+
+@font-face {
+font-family: equity_a_caps;
+font-style: normal;
+font-weight: normal;
+font-stretch: normal;
+font-display: auto;
+src: url('fonts/EquityACaps/equity_a_caps_regular.woff2') format('woff2');
+}
+
+@font-face {
+font-family: equity_a_caps;
+font-style: normal;
+font-weight: bold;
+font-stretch: normal;
+font-display: auto;
+src: url('fonts/EquityACaps/equity_a_caps_bold.woff2') format('woff2');
 }
